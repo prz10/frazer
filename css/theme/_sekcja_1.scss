@@ -1,0 +1,92 @@
+.section-wrapper--sekcja_1 {
+  background-repeat: no-repeat;
+  & > .container {
+    @media (min-width: 993px) {
+      min-height: 635px;
+    }
+
+    padding: 60px 70px;
+    @media (max-width: 993px) {
+      padding: 60px 15px;
+    }
+  }
+  .main {
+    color: white;
+    font-size: 65px;
+    line-height: 75px;
+  }
+
+  .main,
+  .second,
+  .second-tag,
+  .heading {
+    font-family: "MuseoLite";
+  }
+  .second,
+  .second-tag {
+    color: #80dac3;
+  }
+
+  .second {
+    font-size: 50px;
+  }
+  .second-tag {
+    font-size: 40px;
+  }
+
+  .heading {
+    &.main-bold,
+    &.main-small {
+      color: white;
+    }
+  }
+
+  .main-bold {
+    font-size: 60px;
+    font-family: "MuseoNormal";
+  }
+  .main-small {
+    font-size: 40px;
+    font-family: "MuseoNormal";
+  }
+
+  @media (max-width: 1200px) {
+    .main {
+      font-size: 45px;
+      line-height: 55px;
+    }
+    .second {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .second-tag,
+    .main-small {
+      font-size: 25px;
+      line-height: 35px;
+    }
+    .main-bold {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  @media (max-width: 993px) {
+    .main {
+      font-size: 35px;
+      line-height: 45px;
+    }
+    .second {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .second-tag,
+    .main-small {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .main-bold {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}

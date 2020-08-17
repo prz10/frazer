@@ -1,0 +1,1 @@
+<a class="btn-buy" href="<?=home_url("/checkout");?>/?add-to-cart=11" title="Tak, chce kupić bilet!"><img src="<?=IMGS;?>/button.png" alt="button"></a>

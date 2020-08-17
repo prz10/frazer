@@ -1,0 +1,26 @@
+.section-wrapper--sekcja_12{
+    padding: 70px 0;
+    margin-bottom: 0!important;
+    background-position: top center;
+    background-repeat: no-repeat;
+  
+ 
+    .partners{
+        .partner{img{object-fit: contain;}}
+        @media(max-width:1150px){
+            .partner{width:24%}
+        }
+        @media(max-width:993px){
+            flex-wrap: wrap;
+            background-size: cover;
+            background-color: #da2339;
+            .partner{width:50%;padding:15px;}
+        }
+
+        @media(max-width:400px){
+            .partner{width:80%;margin:10px auto;}
+
+        }
+    }
+   
+}

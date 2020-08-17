@@ -1,0 +1,53 @@
+.section-wrapper--sekcja_2 {
+  z-index: 9;
+  .container {
+    max-width: 1355px;
+  }
+  .heading {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .desc {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "MuseoNormal";
+  }
+  .desc-author {
+    font-size: 30px;
+    color: #590156;
+    font-family: "MuseoNormal";
+  }
+  .photo {
+    z-index: 99;
+  }
+  .line-lewo {
+    top: 0;
+    left: 0;
+  }
+
+  .line-nad {
+    right: 10%;
+    top: 0;
+    z-index: -1;
+  }
+
+  .line-pod {
+    right: 10%;
+    bottom: -50%;
+    z-index: -1;
+  }
+
+  @media (max-width: 993px) {
+    .heading {
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+  @media (max-width: 993px) {
+    .line-lewo,
+    .line-nad,
+    .line-pod {
+      display: none;
+    }
+  }
+}

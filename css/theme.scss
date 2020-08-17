@@ -1,0 +1,251 @@
+@import "theme/theme_variables"; // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
+@import "assets/bootstrap4"; // <-------- Loads Bootstrap4
+@import "understrap/understrap"; // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+// @import "understrap/woocommerce"; // <-------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you dont use the corresponding scripts/fonts comment em out
+// @import "assets/font-awesome"; // <-------- Font Awesome Icon font
+@import "assets/underscores"; // <-------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/theme"; // <-------- That's where you can add your own design. Thats your part!
+@import "theme/contact-form7"; // <-------- Contact Form 7 - Bootstrap 4 support
+
+.heading {
+  font-family: "MuseoLite";
+}
+
+@import "theme/intro";
+@import "theme/sekcja_1";
+@import "theme/sekcja_2";
+@import "theme/sekcja_3";
+@import "theme/sekcja_4";
+@import "theme/sekcja_5";
+@import "theme/sekcja_6";
+@import "theme/sekcja_7";
+@import "theme/sekcja_8";
+@import "theme/sekcja_9";
+@import "theme/sekcja_10";
+@import "theme/sekcja_11";
+@import "theme/sekcja_12";
+@import "theme/footer";
+
+body {
+  font-family: "MuseoLite";
+}
+
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+:root {
+  --fs15: 12px;
+  --fs18: 15px;
+  --fs24: 20px;
+  --fs43: 33px;
+  --fs68: 55px;
+}
+
+@media (max-width: 1700px) {
+  :root {
+    --fs18: 14px;
+    --fs43: 29px;
+    --fs68: 45px;
+  }
+}
+@media (max-width: 1300px) {
+  :root {
+    --fs18: 14px;
+    --fs68: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs15: 13px;
+    --fs43: 30px;
+  }
+}
+body {
+  background-color: #e5e6cf;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.site-main {
+  width: 100%;
+}
+
+.section-wrapper {
+  position: relative;
+  & > .container {
+    position: static;
+  }
+  margin-bottom: 60px;
+}
+
+$pink: #e83f56;
+$fiol: #590156;
+
+.heading {
+  color: $pink;
+  font-size: 40px;
+  line-height: 50px;
+  @media (max-width: 1300px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.desc {
+  font-size: 25px;
+  color: $fiol;
+  line-height: 35px;
+  @media (max-width: 1300px) {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
+.btn-buy {
+  padding: 5px;
+  max-width: 350px;
+  display: block;
+  transition: 0.3s;
+  @media (max-width: 1300px) {
+    max-width: 250px;
+  }
+  @media (min-width: 992px) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+#page-wrapper {
+  padding-bottom: 50px;
+}
+
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce #respond input#submit.alt {
+  background-color: $pink !important;
+}
+a {
+  color: $pink;
+}
+
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1 {
+  float: left !important;
+  width: 48% !important;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+  float: right;
+  width: 48% !important;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2,
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1 {
+  @media (max-width: 993px) {
+    float: none;
+    width: 100% !important;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.woocommerce-page .wrapper .container {
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+
+.woocommerce-page .wrapper .container main {
+  padding: 15px;
+}
+.woocommerce-page .woocommerce-input-wrapper {
+  width: 100%;
+  display: block;
+}
+.woocommerce form .form-row label,
+.woocommerce-page form .form-row label {
+  margin-bottom: 0;
+}
+
+.woocommerce-page form {
+  padding: 15px;
+  h3 {
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+}
+
+.logo-header {
+  img {
+    max-width: 200px;
+  }
+}
+
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order {
+  width: 100%;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.woocommerce-notice {
+  text-align: center;
+}
+
+.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+@media (max-width: 993px) {
+  .woocommerce ul.order_details li {
+    float: left;
+    margin-right: 2em;
+    text-transform: uppercase;
+    font-size: 0.715em;
+    line-height: 1;
+    border-right: 1px dashed #d3ced2;
+    padding-right: 2em;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    margin: 0;
+  }
+}

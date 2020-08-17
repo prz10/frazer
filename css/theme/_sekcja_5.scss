@@ -1,0 +1,83 @@
+.section-wrapper--sekcja_5 {
+  .imglineleft {
+    top: -350px;
+    left: 0;
+  }
+  .imgleft {
+    top: -200px;
+    left: 10%;
+  }
+  .imgright {
+    right: 0;
+    top: 5%;
+  }
+  .imgbottom {
+    right: 0;
+    bottom: 25%;
+    z-index: -1;
+  }
+  .heading {
+    color: #590156;
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .column-number {
+    background-repeat: no-repeat;
+    background-position: center center;
+    .number {
+      font-size: 60px;
+      line-height: 60px;
+      color: #590156;
+      font-family: "MuseoBold";
+    }
+    .heading {
+      font-size: 22px;
+      line-height: 30px;
+      max-width: 90%;
+      margin: 0 auto;
+      font-family: "MuseoNormal";
+      span {
+        font-family: "MuseoSemiBold";
+        font-weight: bold;
+        display: block;
+      }
+    }
+  }
+
+  .columns-hashs {
+    .heading {
+      font-family: "MuseoLite";
+    }
+    p {
+      color: #590156;
+      font-size: 25px;
+      line-height: 30px;
+      font-family: "MuseoSemiBold";
+      margin-bottom: 5px;
+    }
+  }
+
+  .columns-hashs {
+    .heading {
+      font-size: 35px;
+      line-height: 45px;
+      color: #da243d;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .imgleft,
+    .imglineleft {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .imgright {
+      display: none;
+    }
+    .imgbottom {
+      z-index: -1;
+    }
+  }
+}

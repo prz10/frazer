@@ -1,0 +1,68 @@
+.section-wrapper--sekcja_3 {
+  z-index: 0;
+  min-height: 1459px;
+  background-repeat: no-repeat;
+  @media (max-width: 768px) {
+    background-color: #da2339;
+    background-image: none!important;
+  }
+  .container {
+    max-width: 1330px;
+    padding: 80px 15px 20px;
+    .heading {
+      font-family: "MuseoLite";
+      &.first {
+        color: #e5e6cf;
+        font-size: 65px;
+        @media (max-width: 993px) {
+          font-size: 50px;
+          line-height: 60px;
+        }
+      }
+      &.second {
+        font-size: 45px;
+        color: white;
+        @media (max-width: 993px) {
+          font-size: 35px;
+          line-height: 45px;
+        }
+      }
+      &.third {
+        margin-top: 10px;
+        font-size: 26px;
+        color: white;
+        line-height: 30px;
+
+        span {
+          display: block;
+          font-size: 16.5px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .desc {
+      color: white;
+      font-family: "MuseoLite";
+      font-size: 17px;
+      line-height: 22px;
+      &.head {
+        font-size: 19px;
+      }
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      font-family: "MuseoLite";
+      font-size: 17px;
+      line-height: 22px;
+      li {
+        margin-bottom: 12px;
+      }
+      @media (max-width:768px){text-align: center;}
+    }
+  }
+}

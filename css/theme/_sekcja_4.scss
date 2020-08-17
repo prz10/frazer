@@ -1,0 +1,45 @@
+.section-wrapper--sekcja_4 {
+  &::before {
+    content: "";
+    height: 150%;
+    top: -120px;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    @media (max-width: 993px) {
+      top: unset;
+    }
+  }
+  min-height: 300px;
+  padding-top: 40px;
+  @media (max-width: 1200px) {
+    padding-top: 20px;
+  }
+  @media (max-width: 993px) {
+    background-color: #c8efd1;
+  }
+  .heading {
+    font-family: "MuseoNormal";
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    font-size: 23px;
+    line-height: 32px;
+    &.fiol {
+      color: #8443ca;
+
+      span {
+        color: #d92138;
+      }
+    }
+    &.big {
+      font-family: "MuseoLite";
+      font-size: 35px;
+      line-height: 45px;
+      @media (max-width: 1200px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+}
