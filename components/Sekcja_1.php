@@ -1,4 +1,5 @@
-<section id="wrapper-sekcja_1" class="section-wrapper section-wrapper--sekcja_1" style="background-image:url(<?= IMGS; ?>/Sekcja_1/bg.png)">
+<section id="wrapper-sekcja_1" class="section-wrapper section-wrapper--sekcja_1"
+    style="background-image:url(<?= IMGS; ?>/Sekcja_1/bg.png)">
 
     <div class="container" data-aos="fade-up">
 
